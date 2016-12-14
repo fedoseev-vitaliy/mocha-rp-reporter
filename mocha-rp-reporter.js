@@ -1,6 +1,6 @@
 const mocha = require('mocha');
 const path = require('path');
-const connector = new (require("./core/rp_connector_sync"))(require(path.join(process.cwd(), "reportportal.json")));
+const connector = new (require("./rp_connector_sync"))(require(path.join(process.cwd(), "reportportal.json")));
 
 
 function RPReporter(runner) {
