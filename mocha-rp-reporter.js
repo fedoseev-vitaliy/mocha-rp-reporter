@@ -1,10 +1,9 @@
 const mocha = require('mocha');
 const path = require('path');
-const connector = new (require("./rp_connector_sync"))(require(path.join(process.cwd(), "reportportal.json")));
 
-
-function RPReporter(runner) {
+function RPReporter(runner, options) {
     mocha.reporters.Base.call(this, runner);
+    let connector = new (require("./rp_connector_sync"))(options);
     let launchId = null;
     let suiteIds = {};
     let testIds = {};
