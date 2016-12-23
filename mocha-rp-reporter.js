@@ -3,10 +3,19 @@ const path = require('path');
 
 function RPReporter(runner, options) {
     mocha.reporters.Base.call(this, runner);
-    let connector = new (require("./rp_connector_sync"))(options.reporterOptions.configFile);
+
+    let config;
     let launchId = null;
     let suiteIds = {};
     let testIds = {};
+    // load config
+    try {
+        config = options.reporterOptions.configOptions ? options.reporterOptions.configOptions : require(options.reporterOptions.configFile);
+    } catch (err) {
+        console.error(`Failed to load config. Error: ${err}`);
+    }
+
+    let connector = new (require("./rp_connector_sync"))(config);
 
     runner.on('pass', function(test){
     });

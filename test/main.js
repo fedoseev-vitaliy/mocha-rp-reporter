@@ -3,7 +3,7 @@ const Mocha = require("mocha");
 let mochaMain = new Mocha({
     reporter: 'mocha-rp-reporter',
     reporterOptions: {
-        configFile: {
+        configOptions: {
             endpoint: "",
             username: "",
             password: "",
@@ -12,7 +12,8 @@ let mochaMain = new Mocha({
             tags: [
                 ""
             ]
-        }
+        },
+        configFile: "path to config .json"
     }
 });
 
