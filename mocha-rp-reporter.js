@@ -3,7 +3,7 @@ const path = require('path');
 
 function RPReporter(runner, options) {
     mocha.reporters.Base.call(this, runner);
-    let connector = new (require("./rp_connector_sync"))(options);
+    let connector = new (require("./rp_connector_sync"))(options.reporterOptions.configFile);
     let launchId = null;
     let suiteIds = {};
     let testIds = {};

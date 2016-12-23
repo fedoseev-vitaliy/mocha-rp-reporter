@@ -1,6 +1,6 @@
 {
   "name": "mocha-rp-reporter",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "mocha reporter for EPAM Report Portal",
   "main": "mocha-rp-reporter.js",
   "scripts": {
@@ -11,5 +11,11 @@
   "dependencies": {
     "mocha": "^3.2.0",
     "sync-rest-client": "^1.0.3"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0"
+  },
+  "scripts": {
+    "test": "node ./test/main.js"
   }
 }
