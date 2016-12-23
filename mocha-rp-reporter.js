@@ -10,7 +10,7 @@ function RPReporter(runner, options) {
     let testIds = {};
     // load config
     try {
-        config = options.reporterOptions.configOptions ? options.reporterOptions.configOptions : require(options.reporterOptions.configFile);
+        config = options.reporterOptions.configOptions ? options.reporterOptions.configOptions : require(path.join(process.cwd(), options.reporterOptions.configFile));
     } catch (err) {
         console.error(`Failed to load config. Error: ${err}`);
     }

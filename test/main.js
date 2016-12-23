@@ -13,7 +13,7 @@ let mochaMain = new Mocha({
                 ""
             ]
         },
-        configFile: "path to config .json"
+        configFile: "reportportal.json"
     }
 });
 
