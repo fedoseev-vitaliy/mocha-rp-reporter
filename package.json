@@ -18,7 +18,7 @@
   "repository" :
     { "type" : "git",
       "url" : "https://github.com/fedoseev-vitaliy/mocha-rp-reporter.git"
-    }
+    },
   "keywords": [
     "epam", "reports", "portal", "mocha", "reporters", "reportportal"
   ]
