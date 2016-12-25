@@ -1,12 +1,12 @@
 {
   "name": "mocha-rp-reporter",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "mocha reporter for EPAM Report Portal",
   "main": "mocha-rp-reporter.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node ./test/main.js"
   },
-  "author": "",
+  "author": "Vitalii Fedosieiev",
   "license": "ISC",
   "dependencies": {
     "mocha": "^3.2.0",
@@ -15,7 +15,8 @@
   "devDependencies": {
     "chai": "^3.5.0"
   },
-  "scripts": {
-    "test": "node ./test/main.js"
-  }
+  "repository" :
+    { "type" : "git",
+      "url" : "https://github.com/fedoseev-vitaliy/mocha-rp-reporter.git"
+    }
 }
