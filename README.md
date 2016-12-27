@@ -12,8 +12,7 @@ It was designed to work with mocha programmatically, in order to be able to para
 
 ```javascript
 const Mocha = require("mocha");
-let mochaMain = new Mocha({
-    timeout: 120000,
+let mochaMain = new Mocha({    
     reporter: 'mocha-rp-reporter',
     reporterOptions: {
         configFile: "path to config.json",
