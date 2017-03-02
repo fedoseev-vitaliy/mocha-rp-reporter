@@ -1,3 +1,4 @@
+"use strict";
 // create mocha instance
 const Mocha = require("mocha");
 let mochaMain = new Mocha({
